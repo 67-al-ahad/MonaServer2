@@ -34,9 +34,12 @@ Since the original official version of the project was made with this version th
 
 # Integration with CMake and vcpkg triplets
 
-Read the followinglink to setup the triplets used by vcpkg to compile MonServer2 with the static library instead of the dlls.
+Read the following link to setup the triplets used by vcpkg to compile MonServer2 with the static library instead of the dlls.
 
 https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md#with-cmake
+
+There is actually a bug with OpenSSL concerning static library. I filed a bug on their  vcpkg github repo : https://github.com/microsoft/vcpkg/issues/12001
+Untile they fix that incongruence you would have to rename the 2 libraries installed by vcpkg with adding d(debug) the end end of the file name.
 
 # SRT Enabled
 
