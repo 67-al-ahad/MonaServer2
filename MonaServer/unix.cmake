@@ -1,0 +1,17 @@
+include(TestBigEndian)
+
+TEST_BIG_ENDIAN(BIG_ENDIAN)
+
+message(STATUS "STARTING UNIX BUILD")
+message(STATUS "BIGENDIAN: ${BIG_ENDIAN}")
+
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c++14 -D__BIG_ENDIAN__=$(BIG_ENDIAN) -D_FILE_OFFSET_BITS=64 -Wall -Wno-reorder -Wno-terminate -Wunknown-pragmas -Wno-unknown-warning-option -Wno-exceptions")
+
+
+if (SRT_ENABLED)
+	SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DENABLE_SRT ")
+endif(SRT_ENABLED)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS ON)
