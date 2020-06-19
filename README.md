@@ -32,6 +32,12 @@ version and reinstalled the latest one. The only way to compile this is by gener
 
 Since the original official version of the project was made with this version there is no need to do anything. 
 
+# Integration with CMake and vcpkg triplets
+
+Read the followinglink to setup the triplets used by vcpkg to compile MonServer2 with the static library instead of the dlls.
+
+https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md#with-cmake
+
 # SRT Enabled
 
 Since I don't know yet how to implement this header file the CMake way. It will be ignored until I find a way to understand how to translate this **Pre-Build Event** correctly.
