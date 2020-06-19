@@ -1,5 +1,5 @@
-# MonaBase
-CMakelists version of https://github.com/MonaSolutions/MonaServer2/tree/master/MonaBase
+# MonaServer2 CMake version on Windows
+CMakelists version of https://github.com/MonaSolutions/MonaServer2
 
 # Windows Operating Systems
 
