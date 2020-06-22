@@ -11,12 +11,22 @@ Read the following for the correct version of your environment.
 * **openSSL** installed via **vcpkg**
 
 ## How to install openSSL both for x86 and x64 via vcpkg
+
+### DLL version of OpenSSL
+#### libssl.dll & libcrypto.dll will be outputted externally with main executable file
+
 * vcpkg install openssl-windows:x86-windows
 * vcpkg install openssl-windows:x64-windows
 
+### Static version of OpenSSL
+#### 1 executable file will be merged with libssl.lib & libcrypto.lib
+
+* vcpkg install openssl-windows:x86-windows-static
+* vcpkg install openssl-windows:x64-windows-static
+
 # Microsoft Visual Studio 2019
 
-This version of MonaBase can be compiled without any problem both as x86 and x64 version.
+This version can be compiled without any problem both as x86 and x64 version.
 Note that all dependencies are handled by **vcpkg** integrated with MSVC++ 2019.
 
 # Microsoft Visual Studio 2017
