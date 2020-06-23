@@ -8,7 +8,7 @@ Read the following for the correct version of your environment.
 ## Dependencies
 * **vcpkg** see [Installation](https://github.com/microsoft/vcpkg)
 * **Microsoft Visual Studio** see [Installation](https://visualstudio.microsoft.com)
-* **openSSL** installed via **vcpkg**
+* **OpenSSL** installed via **vcpkg**
 
 ## How to install OpenSSL both for x86 and x64 via vcpkg
 
