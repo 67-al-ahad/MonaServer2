@@ -10,7 +10,7 @@ Read the following for the correct version of your environment.
 * **Microsoft Visual Studio** see [Installation](https://visualstudio.microsoft.com)
 * **openSSL** installed via **vcpkg**
 
-## How to install openSSL both for x86 and x64 via vcpkg
+## How to install OpenSSL both for x86 and x64 via vcpkg
 
 ### DLL version of OpenSSL
 #### libssl.dll & libcrypto.dll will be outputted externally with main executable file
